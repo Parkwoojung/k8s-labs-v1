@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ddoddo-backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ddoddo-backend
+  template:
+    metadata:
+      labels:
+        app: ddoddo-backend
+    spec:
+      containers:
+        - name: backend
+          image: todo-backend:latest
+          ports:
+            - containerPort: 8080
+          envFrom:
+            - configMapRef:
+                name: ddoddo-market-config
+            - secretRef:
+                name: ddoddo-market-secret

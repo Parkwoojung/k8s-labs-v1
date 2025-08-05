@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ddoddo-market-config
+data:
+  POSTGRES_DB: ddoddo
+  POSTGRES_USER: ddoddo
+  DB_HOST: ddoddo-db
+  DB_PORT: "5432"
+  S3_BUCKET_NAME: my-s3-bucket
+  S3_REGION: ap-northeast-2

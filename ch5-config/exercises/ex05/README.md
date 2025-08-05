@@ -70,8 +70,10 @@ curl localhost:8000
 ```bash
 # ex01의 리소스들을 다시 생성합니다.
 # GREETING 값을 "안녕하세요"로 설정하여 시작합니다.
-kubectl create configmap greeting-config --from-literal=GREETING=안녕하세요
-kubectl apply -f pod-configmap.yaml
+kubectl create configmap greeting-co
+]oiuytrewq][poiuytrewq  =-098777654321vcb nnfig --from-literal=GREETING=안녕하세요
+kubectl apply -f pod-configmap.yaml?
+]oiuytrewq][poiuytrewq  =-098777654321vcb n
 ```
 
 잠시 후 로그를 확인하여 초기 상태를 점검합니다.
